@@ -81,3 +81,13 @@ public bool DestroyFsm<T>(IFsm<T> fsm) where T : class
 确保在调用任何状态机管理方法之前，状态机管理器 `m_FsmManager` 已被正确初始化，否则可能会引发错误。
 
 此组件需要与游戏框架的其他模块和组件进行交互使用，需保证游戏框架已被正确设置并初始化。
+
+# 使用方式(任选其一)
+
+1. 直接在 `manifest.json` 的文件中的 `dependencies` 节点下添加以下内容
+   ```json
+      {"com.alianblank.gameframex.fsm": "https://github.com/AlianBlank/com.alianblank.gameframex.unity.fsm.git"}
+    ```
+2. 在Unity 的`Packages Manager` 中使用`Git URL` 的方式添加库,地址为：https://github.com/AlianBlank/com.alianblank.gameframex.unity.fsm.git
+
+3. 直接下载仓库放置到Unity 项目的`Packages` 目录下。会自动加载识别
