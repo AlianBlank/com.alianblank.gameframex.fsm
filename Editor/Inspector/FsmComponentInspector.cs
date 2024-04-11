@@ -12,7 +12,7 @@ using UnityEditor;
 namespace GameFrameX.Fsm.Editor
 {
     [CustomEditor(typeof(FsmComponent))]
-    internal sealed class FsmComponentInspector : GameFrameworkInspector
+    internal sealed class FsmComponentInspector : ComponentTypeComponentInspector
     {
         public override void OnInspectorGUI()
         {
@@ -40,8 +40,9 @@ namespace GameFrameX.Fsm.Editor
             Repaint();
         }
 
-        private void OnEnable()
+        protected override void RefreshTypeNames()
         {
+            RefreshComponentTypeNames(typeof(IFsmManager));
         }
 
         private void DrawFsm(FsmBase fsm)
