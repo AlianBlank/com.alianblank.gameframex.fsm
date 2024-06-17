@@ -1,5 +1,5 @@
 {
-  "name": "com.alianblank.gameframex.unity.fsm",
+  "name": "com.gameframex.unity.fsm",
   "displayName": "Game Frame X FSM",
   "category": "Game Framework X",
   "description": "Game Frame X FSM Component",
@@ -9,8 +9,8 @@
     "Game Framework X"
   ],
   "repository": {
-    "name": "com.alianblank.gameframex.unity.fsm",
-    "url": "https://github.com/AlianBlank/com.alianblank.gameframex.unity.fsm.git",
+    "name": "com.gameframex.unity.fsm",
+    "url": "https://github.com/AlianBlank/com.gameframex.unity.fsm.git",
     "type": "git"
   },
   "author": {
