@@ -36,7 +36,7 @@ namespace GameFrameX.Fsm.Runtime
         /// </summary>
         protected override void Awake()
         {
-            ImplementationComponentType = Type.GetType(componentType);
+            ImplementationComponentType = Utility.Assembly.GetType(componentType);
             InterfaceComponentType = typeof(IFsmManager);
             base.Awake();
             m_FsmManager = GameFrameworkEntry.GetModule<IFsmManager>();
